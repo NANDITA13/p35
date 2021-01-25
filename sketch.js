@@ -7,7 +7,7 @@ function preload() {
 
   dogImg = loadImage("images/dogImg.png");
   
-  happyDogIme = loadImage("images/dogImg1.png");
+  happyDogImg = loadImage("images/dogImg1.png");
 
 }
 
@@ -33,11 +33,11 @@ function draw() {
   
   background(46, 139, 87);
 
-  function keyWentDown(UP_ARROW) {
+ if (keyWentDown(UP_ARROW) ) {
 
     writeStock(foods);
 
-    dog.addImage(happyDog);
+    dog.addImage(happyDogImg);
 
    }
 
@@ -47,6 +47,9 @@ function draw() {
    fill("blue");
 
    text("Press UP_ARROW Key to feed Drago Milk!",80,20)
+   text("Food Remaining:"+foods,200,150);
+
+
 
 }
 
